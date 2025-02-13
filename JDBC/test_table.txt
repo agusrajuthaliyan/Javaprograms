@@ -1,0 +1,4 @@
+CREATE TABLE test (
+    vid VARCHAR2(2) PRIMARY KEY,
+    vnm VARCHAR2(4)
+);
