@@ -6,7 +6,7 @@ public class SockClient {
 	public static void main(String[] args) {
 		try {
 	
-			Socket s = new Socket("localhost",12345);
+			Socket s = new Socket("localhost",123);
 			System.out.println("Sending a request to a server!");
 			ObjectOutputStream out = new ObjectOutputStream(s.getOutputStream());
 			DataInputStream dis = new DataInputStream(System.in);

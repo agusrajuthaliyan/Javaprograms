@@ -5,7 +5,7 @@ public class SockServer {
 
 	public static void main(String[] args) {
 		try {
-			ServerSocket ss = new ServerSocket(12345);
+			ServerSocket ss = new ServerSocket(123);
 			System.out.println("Server Ready !!!");
 			Socket s = ss.accept();
 			System.out.println("Connection is Live!");
