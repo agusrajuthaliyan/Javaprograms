@@ -5,7 +5,7 @@ class PartTimeStud extends Student
     public String category;
     public PartTimeStud(String name, String roll, int age, String category)
     {
-        super(name, roll, age); // Assuming Student class has a constructor with these parameters
+        super(name, roll, age);
         this.category = category;
     }
     public void disp()
