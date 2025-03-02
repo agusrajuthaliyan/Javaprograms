@@ -1,22 +1,29 @@
 import java.io.*;
 
-class SerializeDemo
-{
-    public static void main(String[] args)
-    {
-        try
-        {
-            Student s1 = new Student("Agus","MSCCS",22);
+class Student implements Serializable {
+    String name;
+    String course;
+    int age;
+
+    public Student(String name, String course, int age) {
+        this.name = name;
+        this.course = course;
+        this.age = age;
+    }
+}
+
+class SerializeDemo {
+    public static void main(String[] args) {
+        try {
+            Student s1 = new Student("Agus", "MSCCS", 22);
             FileOutputStream fos = new FileOutputStream("stud.txt");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(s1);
-            fos.close();
             oos.close();
+            fos.close();
             System.out.println("This is Serialization!");
-        }
-        catch(Exception e)
-        {
-            System.out.println(e);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

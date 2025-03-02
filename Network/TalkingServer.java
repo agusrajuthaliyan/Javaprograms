@@ -1,5 +1,3 @@
-package HelloALan;
-
 import java.net.*;
 import java.io.*;
 
